@@ -1,5 +1,4 @@
-[ ] тупая посылка
-    https://gateway.com/message/loki?message=loki
+[x] тупая посылка
 
 [ ] секурность
 
