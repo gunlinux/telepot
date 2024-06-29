@@ -2,8 +2,8 @@ import os
 
 from fastapi import FastAPI, HTTPException
 from dotenv import load_dotenv
-from tele import Telepot
-from utils import generate_sign
+from telepot.tele import Telepot
+from telepot.utils import generate_sign
 
 load_dotenv()
 
