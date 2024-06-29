@@ -1,4 +1,4 @@
-from ..utils import is_valid, generate_sign
+from ..telepot.utils import is_valid, generate_sign
 
 
 def test_basic():
