@@ -13,17 +13,17 @@ else:
 
 
 def generate_sign(secret, *args, **kwargs) -> str:
-    hash = hashlib.sha256()
+    hash_ = hashlib.sha256()
 
     for arg in args:
-        hash.update(arg.encode())
+        hash_.update(arg.encode())
 
     for k, v in kwargs.items():
-        hash.update(k.encode())
-        hash.update(v.encode())
+        hash_.update(k.encode())
+        hash_.update(v.encode())
 
-    hash.update(secret.encode())
-    return hash.hexdigest()
+    hash_.update(secret.encode())
+    return hash_.hexdigest()
 
 
 def is_valid(secret, sign, *args, **kwargs) -> bool:
