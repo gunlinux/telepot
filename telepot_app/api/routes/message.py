@@ -1,6 +1,6 @@
 import os
 
-from fastapi import FastAPI, HTTPException
+from fastapi import HTTPException, APIRouter
 from dotenv import load_dotenv
 from telepot.utils import generate_sign
 from tasks import send_mssg
@@ -8,7 +8,7 @@ from kombu.exceptions import KombuError
 
 load_dotenv()
 
-app = FastAPI()
+router = APIRouter()
 
 
 users = {
@@ -17,7 +17,7 @@ users = {
 secret_key = os.getenv("SECRET_KEY")
 
 
-@app.get("/message/{user_name}")
+@router.get("/{user_name}")
 async def message_user(user_name: str, message: str, secret: str):
     sign = generate_sign(secret_key, user_name, message=message)
     if sign != secret:
