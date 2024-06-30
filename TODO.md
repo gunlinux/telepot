@@ -4,7 +4,7 @@
 
 [x] client
 
-[ ] celery o_O
+[x] celery o_O
 
 [ ] Управление пользователями
 

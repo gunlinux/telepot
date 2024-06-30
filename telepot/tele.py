@@ -4,6 +4,8 @@ import httpx
 class Telepot:
 
     def __init__(self, token):
+        if not token:
+            raise ValueError
         self.token = token
 
     def send_mssg(self, chat_id, message):
