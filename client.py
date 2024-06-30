@@ -28,7 +28,7 @@ class TelepotClient:
         full_url = f"{url}?{query_string}"
         with urllib.request.urlopen(full_url) as response:
             r = response.read()
-            print(response.status)
+            print(r.decode())
         return r
 
 
