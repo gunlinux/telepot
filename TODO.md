@@ -6,5 +6,7 @@
 
 [x] celery o_O
 
+[x] celery to os.env
+
 [ ] Управление пользователями
 
