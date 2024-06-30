@@ -18,7 +18,7 @@ class TelepotClient:
         self.secret = secret
 
     def send_mssg(self, chat, message):
-        url = urllib.parse.urljoin(self.base, f"/message/{chat}")
+        url = urllib.parse.urljoin(self.base, f"/messages/{chat}")
         sign = generate_sign(self.secret, chat, message=message)
         params = {
             "message": message,
