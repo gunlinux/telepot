@@ -1,0 +1,7 @@
+venv
+.git
+*.md
+*.yaml
+*.db
+Dockerfile
+__pycache__

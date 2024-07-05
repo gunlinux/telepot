@@ -1,5 +1,4 @@
 fastapi
 python-dotenv
 celery[redis]
-flower
 sqlalchemy
