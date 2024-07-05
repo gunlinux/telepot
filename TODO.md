@@ -8,5 +8,9 @@
 
 [x] celery to os.env
 
+[x] user crud to Depends 
+
 [ ] Управление пользователями
+
+[ ] storing messages
 
