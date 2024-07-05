@@ -10,7 +10,7 @@
 
 [x] user crud to Depends 
 
-[ ] Управление пользователями
+[x] Управление пользователями
 
 [ ] storing messages
 
